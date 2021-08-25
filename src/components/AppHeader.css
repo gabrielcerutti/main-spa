@@ -1,0 +1,65 @@
+.MainSpa-header {
+  width: 100%;
+  background-color: #282c34;
+}
+
+.MainSpa-header .center-column {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MainSpa-header > div {
+  padding: 0 0px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.MainSpa-header h1 {
+  margin: 0;
+  font-size: 38px;
+  font-family: fantasy;
+  color: white;
+  margin-left: 10px;
+}
+
+.MainSpa-header nav {
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  background-color: #ffde59;
+  font-size: 20px;
+}
+
+.MainSpa-header nav ol {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+  .MainSpa-header nav ol {
+    display: block;
+  }
+  .MainSpa-header nav li {
+    margin-right: 30px;
+  }
+}
+
+.MainSpa-header nav li {
+  display: inline;
+}
+
+.MainSpa-header nav a {
+  color: inherit;
+}
+
+.MainSpa-header .logo {
+  height: 60px;
+}
+
+
