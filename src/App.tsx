@@ -14,10 +14,10 @@ function App() {
       <BrowserRouter>
         <AppHeader />
         <Routes basename={basename}>
-          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/microx" element={<MicroX />} />
-          <Route path="/microy" element={<MicroY />} />
+          <Route path="/micro-x" element={<MicroX />} />
+          <Route path="/micro-y" element={<MicroY />} />
+          <Route path="/*" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>

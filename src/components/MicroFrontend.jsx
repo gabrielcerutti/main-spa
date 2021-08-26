@@ -4,6 +4,12 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import { createStyles, withStyles } from '@material-ui/core/styles';
 
+function parseHost(host) {
+  let url = new URL(host);
+  let port = url.port !== '' ? ':' + url.port : '';
+  return `${url.protocol}//${url.hostname}${port}`;
+}
+
 const styles = createStyles(() => ({
   loading: {
     margin: '0',
@@ -35,6 +41,9 @@ class MicroFrontend extends React.Component {
 
   componentDidMount() {
     const { id, host, document } = this.props;
+    let baseHost = parseHost(host);
+    console.log(`Host is ${baseHost}`);
+
     const scriptId = `micro-frontend-script-${id}`;
 
     this.setState({
@@ -55,9 +64,13 @@ class MicroFrontend extends React.Component {
           const script = document.createElement('script');
           script.id = scriptId;
           script.crossOrigin = '';
-          script.src = `${host}${manifest.files['main.js']}`;
+          script.src = `${baseHost}${manifest.files['main.js']}`;
           script.onload = this.renderMicroFrontend;
           document.head.appendChild(script);
+          const style = document.createElement('link');
+          style.rel = 'stylesheet';
+          style.href = `${baseHost}${manifest.files['main.css']}`;
+          document.head.appendChild(style);
         })
         .catch((error) => {
           console.error(`Error loading micro-frontend ${id} - ${error.message}`);
@@ -78,7 +91,7 @@ class MicroFrontend extends React.Component {
               if (chunkCount < 0) {
                 chunkCount = arr.length;
               }
-              const path = `${host}${manifest['files'][key]}`;
+              const path = `${baseHost}${manifest['files'][key]}`;
               const script = document.createElement('script');
               if (key === 'main.js') {
                 script.id = scriptId;
@@ -114,16 +127,18 @@ class MicroFrontend extends React.Component {
   componentDidUpdate() {
     if (this.state.status === 'done') {
       const { microId, window, history, basePath, host } = this.props;
+      let baseHost = parseHost(host);
+      console.log(`Host is ${baseHost}`);
 
       if (this.props.buildMode === 'regular') {
         window[`render${microId}`](`${microId}-container`, history, {
           basePath: basePath,
-          host: host,
+          host: baseHost,
         });
       } else {
         window[microId].render(`${microId}-container`, history, {
           basePath: basePath,
-          host: host,
+          host: baseHost,
         });
       }
     }

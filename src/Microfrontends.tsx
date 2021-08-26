@@ -1,16 +1,16 @@
 import MicroFrontend from './components/MicroFrontend';
 
-const microaHost = process.env.REACT_APP_MICROA_HOST ?? '';
-const microbHost = process.env.REACT_APP_MICROB_HOST ?? '';
+const microxHost = process.env.REACT_APP_MICRO_X_HOST ?? '';
+const microyHost = process.env.REACT_APP_MICRO_Y_HOST ?? '';
 
 export const MicroX = () => {
   return (
     <MicroFrontend
       id={1}
       name="Micro-frontend A"
-      microId="YourBrandNewMicrofrontend"
-      host={microaHost}
-      basePath="main-spa/microx"
+      microId="MicroAppX"
+      host={microxHost}
+      basePath="main-spa/micro-x"
       loadType="not-optimized"
       buildMode="library"
     />
@@ -22,9 +22,9 @@ export const MicroY = () => {
     <MicroFrontend
       id={2}
       name="Micro-frontend B"
-      microId="YourBrandNewMicrofrontendB"
-      host={microbHost}
-      basePath="main-spa/microy"
+      microId="MicroAppX"
+      host={microyHost}
+      basePath="main-spa/micro-y"
       loadType="not-optimized"
       buildMode="library"
     />

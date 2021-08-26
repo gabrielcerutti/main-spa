@@ -32,8 +32,8 @@ Then add a new Route:
 <Routes basename={basename}>
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
-    <Route path="/microx" element={<MicroX />} />
-    <Route path="/microy" element={<MicroY />} />
+    <Route path="/micro-x" element={<MicroX />} />
+    <Route path="/micro-y" element={<MicroY />} />
     <Route path="/newroute" element={<YourNewMicro />} />
 </Routes>
 ```

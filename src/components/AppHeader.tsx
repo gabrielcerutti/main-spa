@@ -14,10 +14,10 @@ const AppHeader = () => (
           <NavLink to="/main-spa">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/main-spa/microx">Micro App X</NavLink>
+          <NavLink to="/main-spa/micro-x">Micro App X</NavLink>
         </li>
         <li>
-          <NavLink to="/main-spa/microy">Micro App Y</NavLink>
+          <NavLink to="/main-spa/micro-y">Micro App Y</NavLink>
         </li>
         <li>
           <NavLink to="/main-spa/about">About</NavLink>
