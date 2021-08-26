@@ -12,6 +12,9 @@ const styles = createStyles(() => ({
     left: '50%',
     transform: 'translate(-50%, -50%)',
   },
+  loadingIndicator: {
+    color: '#282c34',
+  },
   error: {
     margin: '0',
     position: 'absolute',
@@ -160,7 +163,7 @@ class MicroFrontend extends React.Component {
     if (this.state.status === 'loading') {
       microModule = (
         <div className={classes.loading}>
-          <CircularProgress></CircularProgress>
+          <CircularProgress className={classes.loadingIndicator}></CircularProgress>
         </div>
       );
     } else if (this.state.status === 'done') {
@@ -169,7 +172,7 @@ class MicroFrontend extends React.Component {
       microModule = (
         <div className={classes.error}>
           <Typography variant="overline" display="block" gutterBottom>
-            An error occurred loading the module, please refresh the page.
+            Oops! An error occurred loading the micro-app, please refresh the page.
           </Typography>
         </div>
       );
@@ -177,7 +180,7 @@ class MicroFrontend extends React.Component {
       microModule = (
         <div className={classes.error}>
           <Typography variant="overline" display="block" gutterBottom>
-            An unexpected error occurred, please try refreshing the page.
+            Oops!An unexpected error occurred, please try refreshing the page.
           </Typography>
         </div>
       );

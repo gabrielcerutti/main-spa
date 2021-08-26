@@ -1,6 +1,43 @@
-# Getting Started with Create React App
+# Getting Started with Main SPA
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The Main SPA is deployed [here](https://gabrielcerutti.github.io/main-spa) including two demo micro-frontends bootstrapped with [microfrontend-typescript](https://www.npmjs.com/package/cra-template-microfrontend-typescript) template.
+
+## How to setup a new micro-frontend
+
+You just need to add a new MicroFrontend component in the Microfrontends.tsx file:
+
+```javascript
+const newMicroHost = process.env.REACT_APP_NEW_MICRO_HOST ?? '';
+
+export const YourNewMicro = () => {
+  return (
+    <MicroFrontend
+      id={1}
+      name="Some Cool Name"
+      microId="MustBeTheSameIdThanMicroFrontendApp"
+      host={newMicroHost}
+      basePath="newroute"
+      loadType="not-optimized"
+      buildMode="library"
+    />
+  );
+};
+```
+
+Then add a new Route:
+
+```javascript
+<Routes basename={basename}>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/microx" element={<MicroX />} />
+    <Route path="/microy" element={<MicroY />} />
+    <Route path="/newroute" element={<YourNewMicro />} />
+</Routes>
+```
+You can navigate directly to that route from the browser address bar or add a new link in the menu if you wish.
 
 ## Available Scripts
 
@@ -44,3 +81,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+Check out the [Micro-Frontend template](https://www.npmjs.com/package/cra-template-microfrontend-typescript).

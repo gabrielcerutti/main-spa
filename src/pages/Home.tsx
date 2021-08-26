@@ -2,6 +2,7 @@ import logo from '../logo.svg';
 import '../App.css';
 
 const Home = () => {
+  document.title = 'Main SPA | Home';
   return (
     <div>
       <header className="Home-header">

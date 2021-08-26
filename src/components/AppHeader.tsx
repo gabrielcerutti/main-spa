@@ -11,16 +11,16 @@ const AppHeader = () => (
     <nav>
       <ol className="center-column">
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/main-spa">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/microa">Micro App A</NavLink>
+          <NavLink to="/main-spa/microx">Micro App X</NavLink>
         </li>
         <li>
-          <NavLink to="/microb">Micro App B</NavLink>
+          <NavLink to="/main-spa/microy">Micro App Y</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/main-spa/about">About</NavLink>
         </li>
       </ol>
     </nav>

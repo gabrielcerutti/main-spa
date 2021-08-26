@@ -2,6 +2,7 @@
   "name": "main-spa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gabrielcerutti.github.io/main-spa",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@testing-library/jest-dom": "^5.11.4",
@@ -24,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +53,7 @@
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-react": "^7.24.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.3.2"
   }
 }
