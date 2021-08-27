@@ -1,6 +1,7 @@
 .MainSpa-header {
   width: 100%;
   background-color: #282c34;
+  box-shadow: 0 1px 8px rgb(0 0 0 / 30%);
 }
 
 .MainSpa-header .center-column {
@@ -21,7 +22,7 @@
   margin: 0;
   font-size: 38px;
   font-family: fantasy;
-  color: beige;
+  color: #fdf0da;
   margin-left: 10px;
 }
 
@@ -30,8 +31,10 @@
   padding: 0 10px;
   display: flex;
   align-items: center;
-  background-color: #ffde59;
+  background-color: #f5b348;
+  color: #282c34;
   font-size: 20px;
+  font-family: fantasy;
 }
 
 .MainSpa-header nav ol {

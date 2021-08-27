@@ -22,7 +22,7 @@ export const MicroY = () => {
     <MicroFrontend
       id={2}
       name="Micro-frontend B"
-      microId="MicroAppX"
+      microId="MicroAppY"
       host={microyHost}
       basePath="main-spa/micro-y"
       loadType="not-optimized"

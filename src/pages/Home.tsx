@@ -1,4 +1,5 @@
-import logo from '../logo.svg';
+// import logo from '../logo.svg';
+import triunfador from '../triunfador.jpg';
 import '../App.css';
 
 const Home = () => {
@@ -6,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <header className="Home-header">
-        <img src={`${logo}`} className="App-logo" alt="logo" />
+        <img src={`${triunfador}`} className="Home-logo" alt="logo" />
         <p>
           Edit <code>src/pages/Home.tsx</code> and save to reload.
         </p>

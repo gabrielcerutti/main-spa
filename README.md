@@ -70,7 +70,7 @@ The **MicroFrontend** component has the following props:
   - _optimized_: regular react app using code splitting 
   - _not-optimized_: regular react app NOT using code splitting 
   - _bundle_: one big bundle.js file
-- **buildMode** (optional): it depends on the approach you have chosen in the previous section, A or B.
+- **buildMode** (optional): it depends on the approach you have chosen to build the micro-frontend.
   - _library_: build using react-app-rewired (default)
   - _standalone_: regular react app build
 - **history**: react history component.
