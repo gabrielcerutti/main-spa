@@ -36,6 +36,20 @@ const About = () => {
           <a className="App-link" href="https://github.com/gabrielcerutti/main-spa">
             https://github.com/gabrielcerutti/main-spa
           </a>
+          ,{' '}
+          <a
+            className="App-link"
+            href="https://github.com/gabrielcerutti/micro-frontend-x"
+          >
+            https://github.com/gabrielcerutti/micro-frontend-x
+          </a>
+          ,{' '}
+          <a
+            className="App-link"
+            href="https://github.com/gabrielcerutti/micro-frontend-y"
+          >
+            https://github.com/gabrielcerutti/micro-frontend-y
+          </a>
           .
         </p>
         <p>

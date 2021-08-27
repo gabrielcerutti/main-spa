@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import logo from './logo.png';
+import logo from './logo_triunfador.jpg';
 import './AppHeader.css';
 
 const AppHeader = () => (
