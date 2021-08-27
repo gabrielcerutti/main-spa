@@ -4,6 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The Main SPA is deployed [here](https://gabrielcerutti.github.io/main-spa) including two demo micro-frontends bootstrapped with [microfrontend-typescript](https://www.npmjs.com/package/cra-template-microfrontend-typescript) template.
 
+The Container Application (aka Main SPA) has the capability to launch a React micro-frontend application.
+
+![image.png](/diagram_1.png)
+
+> **Note:** In the micro-frontend architecture, globals have to be carefully controlled. Globals doesn’t only refer to variables or state, but it can also include things such as window/document event handlers, persistent network connections, anything that can be actively running despite the app no longer being in the DOM. It can be incredibly easy to forget that these things can leak, and that they require proper tear downs.
+
+## Mechanism 
+
+In order to integrate a micro-frontend, some changes must be done in the react app, basically expose two function that will be called from the container app:
+- **render:** this function will call _ReactDOM.render_ to render the root app component.
+- **unMount:** this function will call _ReactDOM.unmountComponentAtNode_ to unmount the root app component and perform any needed cleanup.
+
+You can bootstrap a micro-frontend quickly using the [microfrontend-typescript](https://www.npmjs.com/package/cra-template-microfrontend-typescript) template.
+
 ## How to setup a new micro-frontend
 
 You just need to add a new MicroFrontend component in the Microfrontends.tsx file:
@@ -38,6 +52,28 @@ Then add a new Route:
 </Routes>
 ```
 You can navigate directly to that route from the browser address bar or add a new link in the menu if you wish.
+
+> **Note:** It's important to mention that you have to setup and use the routes properly in the micro-frontend app to be able to navigate thru the different pages.
+
+> **Note:** GitHub Pages doesn’t support routers that use the HTML5 pushState history API under the hood (for example, React Router using browserHistory). This is because when there is a fresh page load for a url like http://user.github.io/todomvc/todos/42, where /todos/42 is a frontend route, the GitHub Pages server returns 404 because it knows nothing of /todos/42.
+
+## MicroFrontend component properties
+
+The setup in the _container app_ should be straightforward. There is a component to facilitate the integration with micro-frontends.
+The **MicroFrontend** component has the following props:
+- **id**: this is the unique identification of the micro-frontend.
+- **name**: this is the name of the module used to show in the document title.
+- **microId**: this is the identification you used in the micro-frontend app to define the library id or the function names depending on the approach you have chosen.
+- **host**: this is the path to the host wherever the app is hosted (cluster or static storage).
+- **basePath**: this is the base path to be used by the React router inside the micro-frontend.
+- **loadType**: this is the way the micro-frontend is loaded, it can be:
+  - _optimized_: regular react app using code splitting 
+  - _not-optimized_: regular react app NOT using code splitting 
+  - _bundle_: one big bundle.js file
+- **buildMode** (optional): it depends on the approach you have chosen in the previous section, A or B.
+  - _library_: build using react-app-rewired (default)
+  - _standalone_: regular react app build
+- **history**: react history component.
 
 ## Available Scripts
 
