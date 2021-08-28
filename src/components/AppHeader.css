@@ -21,7 +21,7 @@
 .MainSpa-header h1 {
   margin: 0;
   font-size: 38px;
-  font-family: fantasy;
+  font-family: 'Francois One';
   color: #fdf0da;
   margin-left: 10px;
 }
@@ -34,7 +34,9 @@
   background-color: #f5b348;
   color: #282c34;
   font-size: 20px;
-  font-family: fantasy;
+  font-family: 'Francois One';
+  font-weight: 400;
+  font-style: normal;
 }
 
 .MainSpa-header nav ol {
@@ -64,5 +66,3 @@
 .MainSpa-header .logo {
   height: 60px;
 }
-
-

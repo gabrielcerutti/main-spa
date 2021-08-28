@@ -1,5 +1,5 @@
 // import logo from '../logo.svg';
-import triunfador from '../triunfador.jpg';
+import triunfador from '../assets/images/triunfador.jpg';
 import '../App.css';
 
 const Home = () => {
@@ -7,7 +7,13 @@ const Home = () => {
   return (
     <div>
       <header className="Home-header">
-        <img src={`${triunfador}`} className="Home-logo" alt="logo" />
+        <a
+          href="https://open.spotify.com/album/26vh26M3hPs7BMelYSQ6iH?si=p0WL7xmcRMyHs_bswRhp9Q&dl_branch=1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={triunfador} className="Home-logo" alt="logo" />
+        </a>
         <p>
           Edit <code>src/pages/Home.tsx</code> and save to reload.
         </p>
