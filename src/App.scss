@@ -1,6 +1,4 @@
 .Main-Spa {
-  text-align: center;
-
   .Home-logo {
     height: 40vmin;
     pointer-events: none;
@@ -15,6 +13,10 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: #fdf0da;
+    
+    .App-link {
+      color: #f5b348;
+    }
   }
 
   .About-main {
@@ -28,6 +30,11 @@
     color: #fdf0da;
     padding: 0 20px;
     margin: auto;
+    text-align: center;
+
+    .App-link {
+      color: #f5b348;
+    }
 
     p {
       font-size: 20px;
@@ -37,16 +44,12 @@
     .About-container {
       padding-left: 20vw;
       padding-right: 20vw;
-  
+
       .About-list {
         list-style-type: none;
         padding: 0;
         margin: 0;
       }
     }
-  }
-
-  .App-link {
-    color: #f5b348;
   }
 }

@@ -67,10 +67,13 @@ class MicroFrontend extends React.Component {
           script.src = `${baseHost}${manifest.files['main.js']}`;
           script.onload = this.renderMicroFrontend;
           document.head.appendChild(script);
-          const style = document.createElement('link');
-          style.rel = 'stylesheet';
-          style.href = `${baseHost}${manifest.files['main.css']}`;
-          document.head.appendChild(style);
+          const css = manifest.files['main.css'];
+          if (css !== undefined) {
+            const style = document.createElement('link');
+            style.rel = 'stylesheet';
+            style.href = `${baseHost}${manifest.files['main.css']}`;
+            document.head.appendChild(style);
+          }
         })
         .catch((error) => {
           console.error(`Error loading micro-frontend ${id} - ${error.message}`);
@@ -182,7 +185,7 @@ class MicroFrontend extends React.Component {
         </div>
       );
     } else if (this.state.status === 'done') {
-      microModule = <main id={`${this.props.microId}-container`} />;
+      microModule = <div id={`${this.props.microId}-container`}></div>;
     } else if (this.state.status === 'error') {
       microModule = (
         <div className={classes.error}>

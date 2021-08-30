@@ -75,6 +75,23 @@ The **MicroFrontend** component has the following props:
   - _standalone_: regular react app build
 - **history**: react history component.
 
+## Styling
+
+This application is using [material-ui](https://material-ui.com/styles/basics/) for styles. To avoid collisions in case that more than one material-ui engine is loaded in the app (for example in the Container App and a Micro-Frontend), a prefix is setup in the class name generator:
+
+```javascript
+// CSS class name generation, we are using this in order to not collision names with the micro-frontends
+const generateClassName = createGenerateClassName({
+  disableGlobal: false,
+  productionPrefix: 'mainspa',
+  seed: 'mainspa',
+});
+
+<StylesProvider generateClassName={generateClassName}>
+    <App />
+</StylesProvider>
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

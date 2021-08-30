@@ -13,7 +13,7 @@ const Home = () => {
         >
           <img src={triunfador} className="Home-logo" alt="logo" />
         </a>
-        <p>Container Application for Micro-Frontends.</p>
+        <p>Lightweight Container Application for Micro-Frontends.</p>
         <a
           className="App-link"
           href="https://reactjs.org"

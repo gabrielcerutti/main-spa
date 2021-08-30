@@ -7,10 +7,10 @@ export const MicroX = () => {
   return (
     <MicroFrontend
       id={1}
-      name="Micro-frontend A"
+      name="Micro-Frontend X"
       microId="MicroAppX"
       host={microxHost}
-      basePath="main-spa/micro-x"
+      basePath="/micro-x"
       loadType="not-optimized"
       buildMode="library"
     />
@@ -21,10 +21,10 @@ export const MicroY = () => {
   return (
     <MicroFrontend
       id={2}
-      name="Micro-frontend B"
+      name="Micro-Frontend Y"
       microId="MicroAppY"
       host={microyHost}
-      basePath="main-spa/micro-y"
+      basePath="/micro-y"
       loadType="not-optimized"
       buildMode="library"
     />

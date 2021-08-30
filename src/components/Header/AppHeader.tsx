@@ -7,22 +7,22 @@ const AppHeader = () => (
     <div>
       <img src={logo} className="logo" alt="logo" />
       <h1>
-        <NavLink to="/main-spa">Main SPA</NavLink>
+        <NavLink to="/">Main SPA</NavLink>
       </h1>
     </div>
     <nav>
       <ol className="center-column">
         <li>
-          <NavLink to="/main-spa">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/main-spa/micro-x">Micro App X</NavLink>
+          <NavLink to="/micro-x">Micro App X</NavLink>
         </li>
         <li>
-          <NavLink to="/main-spa/micro-y">Micro App Y</NavLink>
+          <NavLink to="/micro-y">Micro App Y</NavLink>
         </li>
         <li>
-          <NavLink to="/main-spa/about">About</NavLink>
+          <NavLink to="/about">About</NavLink>
         </li>
       </ol>
     </nav>
