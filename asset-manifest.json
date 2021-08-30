@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/main-spa/static/css/main.0fb4361c.chunk.css",
-    "main.js": "/main-spa/static/js/main.201c6be2.chunk.js",
-    "main.js.map": "/main-spa/static/js/main.201c6be2.chunk.js.map",
-    "runtime-main.js": "/main-spa/static/js/runtime-main.0fedd2db.js",
-    "runtime-main.js.map": "/main-spa/static/js/runtime-main.0fedd2db.js.map",
-    "static/js/2.7bc20f26.chunk.js": "/main-spa/static/js/2.7bc20f26.chunk.js",
-    "static/js/2.7bc20f26.chunk.js.map": "/main-spa/static/js/2.7bc20f26.chunk.js.map",
-    "static/js/3.cbb5c94a.chunk.js": "/main-spa/static/js/3.cbb5c94a.chunk.js",
-    "static/js/3.cbb5c94a.chunk.js.map": "/main-spa/static/js/3.cbb5c94a.chunk.js.map",
+    "main.css": "/main-spa/static/css/main.3c760f05.chunk.css",
+    "main.js": "/main-spa/static/js/main.a94476b2.chunk.js",
+    "main.js.map": "/main-spa/static/js/main.a94476b2.chunk.js.map",
+    "runtime-main.js": "/main-spa/static/js/runtime-main.fbae51eb.js",
+    "runtime-main.js.map": "/main-spa/static/js/runtime-main.fbae51eb.js.map",
+    "static/js/2.5a45228f.chunk.js": "/main-spa/static/js/2.5a45228f.chunk.js",
+    "static/js/2.5a45228f.chunk.js.map": "/main-spa/static/js/2.5a45228f.chunk.js.map",
+    "static/js/3.5b5eae7d.chunk.js": "/main-spa/static/js/3.5b5eae7d.chunk.js",
+    "static/js/3.5b5eae7d.chunk.js.map": "/main-spa/static/js/3.5b5eae7d.chunk.js.map",
     "index.html": "/main-spa/index.html",
-    "static/css/main.0fb4361c.chunk.css.map": "/main-spa/static/css/main.0fb4361c.chunk.css.map",
-    "static/js/2.7bc20f26.chunk.js.LICENSE.txt": "/main-spa/static/js/2.7bc20f26.chunk.js.LICENSE.txt",
+    "static/css/main.3c760f05.chunk.css.map": "/main-spa/static/css/main.3c760f05.chunk.css.map",
+    "static/js/2.5a45228f.chunk.js.LICENSE.txt": "/main-spa/static/js/2.5a45228f.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/main-spa/static/media/FrancoisOne-Regular.579b266c.ttf",
     "static/media/logo_triunfador.2f042067.jpg": "/main-spa/static/media/logo_triunfador.2f042067.jpg",
     "static/media/triunfador.9629e99e.jpg": "/main-spa/static/media/triunfador.9629e99e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0fedd2db.js",
-    "static/js/2.7bc20f26.chunk.js",
-    "static/css/main.0fb4361c.chunk.css",
-    "static/js/main.201c6be2.chunk.js"
+    "static/js/runtime-main.fbae51eb.js",
+    "static/js/2.5a45228f.chunk.js",
+    "static/css/main.3c760f05.chunk.css",
+    "static/js/main.a94476b2.chunk.js"
   ]
 }
