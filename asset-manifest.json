@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/main-spa/static/css/main.3a24f3a8.chunk.css",
-    "main.js": "/main-spa/static/js/main.253fabcd.chunk.js",
-    "main.js.map": "/main-spa/static/js/main.253fabcd.chunk.js.map",
+    "main.css": "/main-spa/static/css/main.d069883b.chunk.css",
+    "main.js": "/main-spa/static/js/main.24cad422.chunk.js",
+    "main.js.map": "/main-spa/static/js/main.24cad422.chunk.js.map",
     "runtime-main.js": "/main-spa/static/js/runtime-main.0fedd2db.js",
     "runtime-main.js.map": "/main-spa/static/js/runtime-main.0fedd2db.js.map",
     "static/js/2.c6d830ba.chunk.js": "/main-spa/static/js/2.c6d830ba.chunk.js",
@@ -10,16 +10,16 @@
     "static/js/3.cbb5c94a.chunk.js": "/main-spa/static/js/3.cbb5c94a.chunk.js",
     "static/js/3.cbb5c94a.chunk.js.map": "/main-spa/static/js/3.cbb5c94a.chunk.js.map",
     "index.html": "/main-spa/index.html",
-    "static/css/main.3a24f3a8.chunk.css.map": "/main-spa/static/css/main.3a24f3a8.chunk.css.map",
+    "static/css/main.d069883b.chunk.css.map": "/main-spa/static/css/main.d069883b.chunk.css.map",
     "static/js/2.c6d830ba.chunk.js.LICENSE.txt": "/main-spa/static/js/2.c6d830ba.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/main-spa/static/media/FrancoisOne-Regular.579b266c.ttf",
+    "static/media/index.scss": "/main-spa/static/media/FrancoisOne-Regular.579b266c.ttf",
     "static/media/logo_triunfador.2f042067.jpg": "/main-spa/static/media/logo_triunfador.2f042067.jpg",
     "static/media/triunfador.9629e99e.jpg": "/main-spa/static/media/triunfador.9629e99e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0fedd2db.js",
     "static/js/2.c6d830ba.chunk.js",
-    "static/css/main.3a24f3a8.chunk.css",
-    "static/js/main.253fabcd.chunk.js"
+    "static/css/main.d069883b.chunk.css",
+    "static/js/main.24cad422.chunk.js"
   ]
 }
