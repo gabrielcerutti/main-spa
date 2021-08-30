@@ -1,4 +1,4 @@
-import '../App.css';
+import '../App.scss';
 
 const About = () => {
   document.title = 'Main SPA | About';
@@ -32,25 +32,30 @@ const About = () => {
         </p>
         <p>
           If you just want to read the source code for yourself, it&apos;s all available
-          on Github at{' '}
-          <a className="App-link" href="https://github.com/gabrielcerutti/main-spa">
-            https://github.com/gabrielcerutti/main-spa
-          </a>
-          ,{' '}
-          <a
-            className="App-link"
-            href="https://github.com/gabrielcerutti/micro-frontend-x"
-          >
-            https://github.com/gabrielcerutti/micro-frontend-x
-          </a>
-          ,{' '}
-          <a
-            className="App-link"
-            href="https://github.com/gabrielcerutti/micro-frontend-y"
-          >
-            https://github.com/gabrielcerutti/micro-frontend-y
-          </a>
-          .
+          on Github at
+          <ul className="About-list">
+            <li>
+              <a className="App-link" href="https://github.com/gabrielcerutti/main-spa">
+                https://github.com/gabrielcerutti/main-spa
+              </a>
+            </li>
+            <li>
+              <a
+                className="App-link"
+                href="https://github.com/gabrielcerutti/micro-frontend-x"
+              >
+                https://github.com/gabrielcerutti/micro-frontend-x
+              </a>
+            </li>
+            <li>
+              <a
+                className="App-link"
+                href="https://github.com/gabrielcerutti/micro-frontend-y"
+              >
+                https://github.com/gabrielcerutti/micro-frontend-y
+              </a>
+            </li>
+          </ul>
         </p>
         <p>
           Also, check out the CRA microfrontend-typescript template, it&apos;s available

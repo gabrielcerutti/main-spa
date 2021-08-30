@@ -1,5 +1,5 @@
-import './App.css';
-import AppHeader from './components/AppHeader';
+import './App.scss';
+import AppHeader from './components/Header/AppHeader';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,7 +10,7 @@ function App() {
   console.log(`Public URL is ${process.env.PUBLIC_URL}`);
   const basename = process.env.PUBLIC_URL;
   return (
-    <div className="App">
+    <div className="Main-Spa">
       <BrowserRouter>
         <AppHeader />
         <Routes basename={basename}>

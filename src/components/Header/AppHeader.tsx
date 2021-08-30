@@ -1,12 +1,14 @@
 import { NavLink } from 'react-router-dom';
 import logo from './logo_triunfador.jpg';
-import './AppHeader.css';
+import './AppHeader.scss';
 
 const AppHeader = () => (
   <header className="MainSpa-header">
     <div>
       <img src={logo} className="logo" alt="logo" />
-      <h1>Main SPA</h1>
+      <h1>
+        <NavLink to="/main-spa">Main SPA</NavLink>
+      </h1>
     </div>
     <nav>
       <ol className="center-column">

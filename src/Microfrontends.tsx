@@ -1,4 +1,4 @@
-import MicroFrontend from './components/MicroFrontend';
+import MicroFrontend from './components/MicroFrontend/MicroFrontend';
 
 const microxHost = process.env.REACT_APP_MICRO_X_HOST ?? '';
 const microyHost = process.env.REACT_APP_MICRO_Y_HOST ?? '';

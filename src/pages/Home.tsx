@@ -1,6 +1,5 @@
-// import logo from '../logo.svg';
 import triunfador from '../assets/images/triunfador.jpg';
-import '../App.css';
+import '../App.scss';
 
 const Home = () => {
   document.title = 'Main SPA | Home';
@@ -14,9 +13,7 @@ const Home = () => {
         >
           <img src={triunfador} className="Home-logo" alt="logo" />
         </a>
-        <p>
-          Edit <code>src/pages/Home.tsx</code> and save to reload.
-        </p>
+        <p>Container Application for Micro-Frontends.</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -31,7 +28,7 @@ const Home = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          ...and Micro-Frontends Concepts!
+          And Micro-Frontends Concepts!
         </a>
       </header>
     </div>
