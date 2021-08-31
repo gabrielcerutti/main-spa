@@ -13,22 +13,17 @@ const Home = () => {
         >
           <img src={triunfador} className="Home-logo" alt="logo" />
         </a>
-        <p>Lightweight Container Application for Micro-Frontends.</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          Main SPA (Single Page Application) is a Lightweight Container Application for
+          Micro-Frontends.
+        </p>
         <a
           className="App-link"
           href="https://martinfowler.com/articles/micro-frontends.html"
           target="_blank"
           rel="noopener noreferrer"
         >
-          And Micro-Frontends Concepts!
+          Learn Micro-Frontends Concepts!
         </a>
       </header>
     </div>

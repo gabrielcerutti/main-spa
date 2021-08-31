@@ -13,7 +13,8 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: #fdf0da;
-    
+    text-align: center;
+
     .App-link {
       color: #f5b348;
     }
@@ -42,8 +43,8 @@
     }
 
     .About-container {
-      padding-left: 20vw;
-      padding-right: 20vw;
+      padding-left: 15vw;
+      padding-right: 15vw;
 
       .About-list {
         list-style-type: none;
