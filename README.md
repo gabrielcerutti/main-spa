@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The Main SPA is deployed [here](https://gabrielcerutti.github.io/main-spa) including two demo micro-frontends bootstrapped with [microfrontend-typescript](https://www.npmjs.com/package/cra-template-microfrontend-typescript) template.
+The Container Application is deployed in [GitHub Pages](https://gabrielcerutti.github.io/main-spa), it includes two micro-frontends bootstrapped with [microfrontend-typescript](https://www.npmjs.com/package/cra-template-microfrontend-typescript) template.
 
 The Container Application (aka Main SPA) has the capability to launch a React micro-frontend application.
 
@@ -12,9 +12,13 @@ The Container Application (aka Main SPA) has the capability to launch a React mi
 
 ## Mechanism 
 
-In order to integrate a micro-frontend, some changes must be done in the react app, basically expose two function that will be called from the container app:
+In order to integrate a micro-frontend, some changes must be done in the react app, basically expose two functions that will be called from the container app:
 - **render:** this function will call _ReactDOM.render_ to render the root app component.
 - **unMount:** this function will call _ReactDOM.unmountComponentAtNode_ to unmount the root app component and perform any needed cleanup.
+
+It is possible to subscribe/unsubscribe from the Container App to events dispatched from the micro-frontend with the functions:
+- **subscribe**
+- **unSubscribe**
 
 You can bootstrap a micro-frontend quickly using the [microfrontend-typescript](https://www.npmjs.com/package/cra-template-microfrontend-typescript) template.
 
