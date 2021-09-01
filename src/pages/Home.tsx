@@ -6,13 +6,7 @@ const Home = () => {
   return (
     <div>
       <header className="Home-header">
-        <a
-          href="https://open.spotify.com/album/26vh26M3hPs7BMelYSQ6iH?si=p0WL7xmcRMyHs_bswRhp9Q&dl_branch=1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={triunfador} className="Home-logo" alt="logo" />
-        </a>
+        <img src={triunfador} className="Home-logo" alt="logo" />
         <p>
           Main SPA (Single Page Application) is a Lightweight Container Application for
           Micro-Frontends.
