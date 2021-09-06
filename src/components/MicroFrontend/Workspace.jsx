@@ -10,7 +10,14 @@ const useStyles = makeStyles((theme) => ({
       overflowY: 'auto',
       overflowX: 'hidden',
       maxHeight: `calc(100vh - 100px)`,
-      ...theme.mixins.scrollbar,
+      '&::-webkit-scrollbar': {
+        width: 8,
+        height: 8,
+      },
+      '&::-webkit-scrollbar-thumb': {
+        background: 'grey',
+        border: 'none',
+      },
     },
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,

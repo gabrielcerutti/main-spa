@@ -134,14 +134,17 @@ class MicroFrontend extends React.Component {
       console.log(`Host is ${baseHost}`);
 
       if (this.props.buildMode === 'regular') {
-        window[`render${microId}`](`${microId}-container`, history, {
+        window[`render${microId}`](`${microId}-container`, {
           basePath: basePath,
           host: baseHost,
+          history: history,
         });
       } else {
+        // library mode
         window[microId].render(`${microId}-container`, history, {
           basePath: basePath,
           host: baseHost,
+          history: history,
         });
       }
     }

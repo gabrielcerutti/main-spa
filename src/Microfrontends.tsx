@@ -1,4 +1,4 @@
-import MicroFrontend from './components/MicroFrontend/MicroFrontend';
+import MicroFrontend from './components/MicroFrontend/MicroFrontendFunc';
 
 const microxHost = process.env.REACT_APP_MICRO_X_HOST ?? '';
 const microyHost = process.env.REACT_APP_MICRO_Y_HOST ?? '';
@@ -25,8 +25,8 @@ export const MicroY = () => {
       microId="MicroAppY"
       host={microyHost}
       basePath="/micro-y"
-      loadType="not-optimized"
-      buildMode="library"
+      loadType="optimized"
+      buildMode="regular"
     />
   );
 };

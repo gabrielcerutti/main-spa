@@ -68,6 +68,7 @@ const About = () => {
           </a>
           .
         </p>
+        <p>Reach out to me for any question, I will be glad to help you out :)</p>
       </div>
     </main>
   );
