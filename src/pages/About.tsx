@@ -30,7 +30,7 @@ const About = () => {
           breaking up monolithic frontend codebases into smaller, simpler applications
           that can be delivered to production by multiple teams independently.
         </p>
-        <p>
+        <div className="About-p">
           If you just want to read the source code for yourself, it&apos;s all available
           on Github at
           <ul className="About-list">
@@ -56,7 +56,7 @@ const About = () => {
               </a>
             </li>
           </ul>
-        </p>
+        </div>
         <p>
           Also, check out the CRA microfrontend-typescript template, it&apos;s available
           on npm registry at{' '}
