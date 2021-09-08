@@ -3,6 +3,11 @@
   src: local('Francois One'), url(assets/fonts/FrancoisOne-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Go 2 Old Western';
+  src: local('Go 2 Old Western'), url('assets/fonts/Go 2 Old Western.woff') format('woff');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
