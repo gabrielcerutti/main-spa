@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/main-spa/static/css/main.759ee543.chunk.css",
+    "main.css": "/main-spa/static/css/main.4689b7ce.chunk.css",
     "main.js": "/main-spa/static/js/main.d2e4c32b.chunk.js",
     "main.js.map": "/main-spa/static/js/main.d2e4c32b.chunk.js.map",
     "runtime-main.js": "/main-spa/static/js/runtime-main.a0bbfdb9.js",
@@ -10,7 +10,7 @@
     "static/js/3.b9dbad22.chunk.js": "/main-spa/static/js/3.b9dbad22.chunk.js",
     "static/js/3.b9dbad22.chunk.js.map": "/main-spa/static/js/3.b9dbad22.chunk.js.map",
     "index.html": "/main-spa/index.html",
-    "static/css/main.759ee543.chunk.css.map": "/main-spa/static/css/main.759ee543.chunk.css.map",
+    "static/css/main.4689b7ce.chunk.css.map": "/main-spa/static/css/main.4689b7ce.chunk.css.map",
     "static/js/2.72ae97c1.chunk.js.LICENSE.txt": "/main-spa/static/js/2.72ae97c1.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/main-spa/static/media/Go 2 Old Western.c7597515.woff",
     "static/media/logo_triunfador.2f042067.jpg": "/main-spa/static/media/logo_triunfador.2f042067.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a0bbfdb9.js",
     "static/js/2.72ae97c1.chunk.js",
-    "static/css/main.759ee543.chunk.css",
+    "static/css/main.4689b7ce.chunk.css",
     "static/js/main.d2e4c32b.chunk.js"
   ]
 }
